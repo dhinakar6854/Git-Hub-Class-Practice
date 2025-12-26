@@ -1,0 +1,93 @@
+---------------- < GIT  >
+
+git init
+ls 
+ls -a           (hidden file)
+
+git config --global user.name " Prasad"
+git config --global user.email "devopstraining2015@gmail.com"
+
+git config --list
+
+Phases:
+
+1) Workspace (new files & modify data in existing it comes to ) 
+ 
+2) Staging/Index area
+
+3) Local repo (ready to push )
+
+
+touch file1
+git status
+git add file1
+git status
+git commit -m "label" file1
+git log
+git show cid
+
+touch file2
+git status
+git add file2
+git status
+git commit -m "lablemsg" file2
+git log
+
+touch file3 file4 file5
+git status
+
+git add filename
+
+git add .
+
+git add -A
+
+git add *
+
+git checkout filename (How to checkout 
+
+git add filename filename .....
+
+git commit -m "lablemsg" filename...
+
+git reset HEAD filename (staging to workspace)
+
+git reset --soft cid (To local to staging)
+
+git reset --mixed cid (local to workspace)
+
+git reset --hard cid ( delete)
+
+>    rm -rf  filename
+ .ls
+ .git status
+ .deleted :filename  in red colour
+>git add filename/ .
+>git commit -m "deleted file"
+>git push 
+
+.that file is deleted in central repository 
+
+
+>>>Directory<<<
+
+1. mkdir PRASAD
+
+2. cd PRASAD
+
+3.touch file1 file2 file3
+
+4.   cd ..
+
+5.  git add . /  (git add PRASAD/file1)
+
+6. git commit -m " lable message"
+
+7. git push 
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Dhina007/Prasad.git
+git push -u origin main 
